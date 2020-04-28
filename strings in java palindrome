@@ -1,0 +1,33 @@
+public class demo
+{
+public static void main(string[] args)
+{
+string x ="india";
+                             *\for any blank words like too hot to hoot we use x = x.replace(" ","");
+char y[]  =x.chararray();
+int size= y.length;
+char a[]=new char[size];
+ 
+ int i=0;
+ while(i!=size)
+ {
+ a[size-1-i] =y[i];
+ ++i;
+ }
+ i=0;
+  while(i!=size)
+  {
+  if(a[i]!=y[i])
+  {
+  system.out.println("not a palindrome");
+  system.exit(0);
+  }
+  else
+  {
+  ++i;
+  continue;
+  }
+  {
+  sysytem.out.println("palindrome");
+  }
+  }
