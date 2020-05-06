@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void exchange (int * , int *);
+void main()
+{
+int a,b;
+printf("enter any 2 numbers");
+scanf("%d %d ;&a, &b");
+printf("before swapping a =%d and b=%d" ,a,b);
+exchange (&a,&b);
+printf("after swapping a=5d and b= %d",a,b);
+getch();
+}
+void exchange(int *p ,int *q)
+{
+int temp;
+temp = *p;
+*p = *q;
+*q = temp;
+}     
