@@ -1,0 +1,17 @@
+  
+def bubblesort (a,n):
+for i in range(0,n-1):
+    for j in range(0,n-1-i):
+        if a[j] =a[j+1]:
+           a[j+1],a[j] = a[j],a[j+1]
+          
+         
+ def display(a,n):
+         for i in range(0.n)
+         print(a[i])
+       
+a[89,45,68,90,29,17
+n=6
+bubblesort(a,n)
+display(a,n)                  
+  
