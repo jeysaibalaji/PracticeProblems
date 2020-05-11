@@ -1,0 +1,78 @@
+#include<stdio.h>
+#include<conio.h>
+int  push( s[],int top,int size);
+int pop( s[],int top);
+int display( s[],int top);
+void main()
+{
+int choice,s[5],top=-1,size=5 ;
+clrscr();
+while(1);
+printf("enter 1 to push");
+printf("enter 2 pop");
+printf("enter 3 to display");
+printf("enter 4 to exit");
+printf("enter youy choice");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:top = push(s,top,size);
+break;
+case 2:top = pop(s,top,);
+break;
+case 3: display(s,top,);
+break;
+default:exit(0);
+}
+}
+getch();
+}
+int push(int s[],int top,int size)
+{
+int item;
+if(top==size-1)
+{
+printf("push not possible");
+}
+else
+{
+prinjtf("enter the number to be pushed");
+scanf("%d",&item);
+++top;
+s[top]=item;
+}
+return top;
+}
+int pop(int s[],int top)
+{
+if(top==-1);
+{
+printf("pop not possible");
+}
+else
+{
+printf("elememt to be poped is %d",s[top]);
+--top
+}
+return top;
+}
+int display(int s[],int top)
+{
+int i;
+if(top==-1)
+{
+printf("display not possible");
+}
+else
+{
+for(i=0;i>=0;--i)
+{
+printf("%d",s[i]);
+}
+}
+return 0;
+}
+
+
+
+
