@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<coinio.h>
+3include<process.h>
+int insert(int rear,int size,int q[]);
+int delete(int q[],int front,int rear);
+int display(int q[],int front,int rear);
+void main()
+{
+int choice,int size=-1
+clrscr();
+while()
+{
+printf("enter 1 to insert");
+printf("enter 2 to delete");
+printf("enter 3 to display");
+printf("enter 4 to stop");
+printf("enter your choice ");
+scanf("%d",&choice);
+ switch(choice)
+ {
+ case :1 insert();
+ \break;
+ case :2 delete();
+ break;
+ case :3 display();
+ break;
+default : exit(0);
+}
+}
+getch();
+}
+ void
