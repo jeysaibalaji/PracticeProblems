@@ -52,7 +52,7 @@ printf("pop not possible");
 else
 {
 printf("elememt to be poped is %d",s[top]);
---top
+--top;
 }
 return top;
 }
