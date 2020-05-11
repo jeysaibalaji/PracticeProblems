@@ -6,7 +6,7 @@ int delete(int q[],int front,int rear);
 int display(int q[],int front,int rear);
 void main()
 {
-int choice,int size=-1
+int choice, size=5,front=0,rear=1,q[5];
 clrscr();
 while()
 {
@@ -18,15 +18,66 @@ printf("enter your choice ");
 scanf("%d",&choice);
  switch(choice)
  {
- case :1 insert();
- \break;
- case :2 delete();
+ case 1:rear = insert(q[],rear.size);
  break;
- case :3 display();
+ case 2:front = delete(q[],rear,front);
+ break;
+ case 3: display(q[],front,rear);
  break;
 default : exit(0);
 }
 }
 getch();
 }
- void
+ int insert(int q[],int rear,int front)
+int item;
+{
+ if(rear==size-1)
+ {
+ pritf("insert not possible");
+ }
+ else
+ {
+ printf("enter the number to be inserted");
+ scanf("%d",&item);
+ ++rear;
+ q[rear]=item;
+ }
+ return rear;
+ }
+ 
+ int delete(int q[],int rear,int front)
+ {
+ if(front>rear)
+ {
+ printf("deletion not possible");
+ }
+ else
+ {
+ printf(" number is deleted %d",q[front]);
+ ++front;
+ }
+ return front;
+ }
+ 
+ int display(int q[],int rear,int front)
+ {
+ int i;
+ if(rear>front)
+ {
+ printf("display not possible");
+ }
+ else
+ {
+ for(i=front;i<=rear;++i)
+ {
+ scanf("%d".q[i]);
+ }
+ }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
