@@ -36,7 +36,7 @@ printf("push not possible");
 }
 else
 {
-prinjtf("enter the number to be pushed");
+printf("enter the number to be pushed");
 scanf("%d",&item);
 ++top;
 s[top]=item;
